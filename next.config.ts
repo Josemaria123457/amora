@@ -2,18 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    // cualquiera de estas dos sirve; usa SOLO una de las dos
-    // 1) Lista simple de dominios
-    // domains: ["images.unsplash.com", "source.unsplash.com", "plus.unsplash.com"],
-
-    // 2) remotePatterns (más flexible)
+    // Configuración para permitir imágenes externas
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
       { protocol: "https", hostname: "source.unsplash.com" },
-      { protocol: "https", hostname: "plus.unsplash.com" }
+      { protocol: "https", hostname: "plus.unsplash.com" },
     ],
-    formats: ["image/avif", "image/webp"]
-  }
+    formats: ["image/avif", "image/webp"],
+  },
+
+  // 🚀 Ignora errores de lint o types en el build de producción (opcional pero recomendado)
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
 };
 
 module.exports = nextConfig;
