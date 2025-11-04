@@ -690,7 +690,7 @@ const paquetes = [
     </div>
 
     <ul className="cta-trust" aria-label="Sellos de confianza">
-      <li>🧁 Hecho a Mano</li>
+      <li>🧁 Hecho a mano</li>
       <li>🌿 Ingredientes reales</li>
       <li>🚚 Entrega segura</li>
     </ul>
